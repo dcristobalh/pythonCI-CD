@@ -1,5 +1,7 @@
 FROM python:3
 
+CMD ["echo", "Hola!"]
+
 ADD my_script.py /
 
 RUN touch a && rm a
