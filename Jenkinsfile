@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/diecristher/python_scripts.git'
+        git url: 'https://github.com/diecristher/python_scripts.git'
+            credentialsId: 'github'
       }
     }
     stage('Building image') {
