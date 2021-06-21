@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git(url: 'https://github.com/diecristher/python_scripts.git', credentialsId: 'github', branch: '*')
+        git(url: 'https://github.com/diecristher/python_scripts.git', credentialsId: 'github', branch: 'main', poll: true)
       }
     }
 
